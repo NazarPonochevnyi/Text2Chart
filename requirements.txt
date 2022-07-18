@@ -11,7 +11,7 @@ pandas==1.2.4
 plotly==5.8.0
 PyYAML==5.4.1
 tokenizers==0.10.3
-torch==1.8.1
+torch==1.9
 tqdm
 transformers==4.14.1
 sentencepiece
