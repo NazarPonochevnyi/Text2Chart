@@ -6,7 +6,6 @@ gradio==3.0.26
 huggingface-hub==0.7.0
 langdetect==1.0.9
 language-tool-python==2.7.1
-matplotlib==3.5.2
 nltk==3.7
 pandas==1.2.4
 plotly==5.8.0
