@@ -45,10 +45,6 @@ httpcore==0.15.0
 httpx==0.23.0
 huggingface-hub==0.7.0
 importlib-resources==5.7.1
-ipykernel==6.13.0
-ipython==8.4.0
-ipython-genutils==0.2.0
-ipywidgets==7.7.0
 jedi==0.18.1
 Jinja2==3.1.2
 jsonschema==4.6.0
