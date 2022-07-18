@@ -4,8 +4,10 @@ from deepmultilingualpunctuation import PunctuationModel
 from utils import text2int
 from nltk import tokenize
 from pprint import pprint
+import nltk
 
 
+nltk.download('punkt')
 pipe = pipeline("automatic-speech-recognition", "facebook/wav2vec2-large-960h-lv60-self")
 # tokenizer = T5Tokenizer.from_pretrained("flexudy/t5-small-wav2vec2-grammar-fixer")
 # post_model = T5ForConditionalGeneration.from_pretrained("flexudy/t5-small-wav2vec2-grammar-fixer")
