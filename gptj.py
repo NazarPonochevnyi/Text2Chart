@@ -186,9 +186,8 @@ def get_code(text):
 
     prompt = tokenizer(text_prompt, return_tensors='pt')
     prompt = {key: value.to(device) for key, value in prompt.items()}
-    out = gpt.generate(**prompt, max_new_tokens=100, temperature=0)
+    out = gpt.generate(**prompt, max_new_tokens=125, temperature=0)
     res = tokenizer.decode(out[0])
-    print(res)
     stop = re.search(r'description:|code:', res[len(text_prompt):])
     cmd = res[len(text_prompt):len(text_prompt) + stop.start()].strip()
 
