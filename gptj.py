@@ -162,7 +162,7 @@ config = transformers.GPTJConfig.from_pretrained("EleutherAI/gpt-j-6B")
 tokenizer = transformers.AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
 
 
-gpt = GPTJForCausalLM.from_pretrained("hivemind/gpt-j-6B-8bit", low_cpu_mem_usage=True)
+gpt = GPTJForCausalLM.from_pretrained("hivemind/gpt-j-6B-8bit")
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 gpt.to(device)
